@@ -1,6 +1,8 @@
 defmodule SuperRentalsBackend.RentalView do
   use SuperRentalsBackend.Web, :view
 
+  attributes [:title, :owner, :city, :type, :bedrooms, :image]
+  
   def render("index.json", %{rentals: rentals}) do
     %{data: render_many(rentals, SuperRentalsBackend.RentalView, "rental.json")}
   end
