@@ -36,7 +36,8 @@ defmodule SuperRentalsBackend.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
-     {:ja_serializer, "~> 0.6.0"}]
+     {:ja_serializer, "~> 0.6.0"},
+     {:corsica, "~> 0.4"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

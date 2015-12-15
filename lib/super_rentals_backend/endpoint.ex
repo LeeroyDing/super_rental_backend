@@ -35,5 +35,7 @@ defmodule SuperRentalsBackend.Endpoint do
     key: "_super_rentals_backend_key",
     signing_salt: "CLg1UVLz"
 
+  plug Corsica, [origins: ["http://localhost:4200"]]
+
   plug SuperRentalsBackend.Router
 end
